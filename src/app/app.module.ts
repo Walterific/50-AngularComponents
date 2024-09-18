@@ -47,6 +47,16 @@ import {CurrencyformatterComponent} from "./components/currencyformatter/currenc
 import {RandomquotedisplayComponent} from "./components/randomquotedisplay/randomquotedisplay.component";
 import {UppercasegreetingComponent} from "./components/uppercasegreeting/uppercasegreeting.component";
 import {DivisiblecheckerComponent} from "./components/divisiblechecker/divisiblechecker.component";
+import {IfelsestatementComponent} from "./components/ifelsestatement/ifelsestatement.component";
+import {SwitchcasestatementComponent} from "./components/switchcasestatement/switchcasestatement.component";
+import {WhileloopComponent} from "./components/whileloop/whileloop.component";
+import {DowhileloopComponent} from "./components/dowhileloop/dowhileloop.component";
+import {ForloopComponent} from "./components/forloop/forloop.component";
+import {NestedforloopComponent} from "./components/nestedforloop/nestedforloop.component";
+import {ForinloopComponent} from "./components/forinloop/forinloop.component";
+import {ForofloopComponent} from "./components/forofloop/forofloop.component";
+import {BooleancheckerComponent} from "./components/booleanchecker/booleanchecker.component";
+import {StringmanipulatorComponent} from "./components/stringmanipulator/stringmanipulator.component";
 
 
 const routes: Routes = [
@@ -90,7 +100,17 @@ const routes: Routes = [
   {path: 'currencyformatter', component: CurrencyformatterComponent},
   {path: 'randomquotedisplay', component: RandomquotedisplayComponent},
   {path: 'uppercasegreeting', component: UppercasegreetingComponent},
-  {path: 'divisiblechecker', component: DivisiblecheckerComponent}
+  {path: 'divisiblechecker', component: DivisiblecheckerComponent},
+  {path: 'ifelsestatement', component: IfelsestatementComponent},
+  {path: 'switchcasestatement', component: SwitchcasestatementComponent},
+  {path: 'whileloop', component: WhileloopComponent},
+  {path: 'dowhileloop', component: DowhileloopComponent},
+  {path: 'forloop', component: ForloopComponent},
+  {path: 'nestedforloop', component: NestedforloopComponent},
+  {path: 'forinloop', component: ForinloopComponent},
+  {path: 'forofloop', component: ForofloopComponent},
+  {path: 'booleanchecker', component: BooleancheckerComponent},
+  {path: 'stringmanipulator', component: StringmanipulatorComponent}
 ]
 
 @NgModule({
@@ -144,7 +164,17 @@ const routes: Routes = [
     CurrencyformatterComponent,
     RandomquotedisplayComponent,
     UppercasegreetingComponent,
-    DivisiblecheckerComponent
+    DivisiblecheckerComponent,
+    IfelsestatementComponent,
+    SwitchcasestatementComponent,
+    WhileloopComponent,
+    DowhileloopComponent,
+    ForloopComponent,
+    NestedforloopComponent,
+    ForinloopComponent,
+    ForofloopComponent,
+    BooleancheckerComponent,
+    StringmanipulatorComponent
   ],
 
   providers: [
