@@ -1,0 +1,17 @@
+<div>
+  <label for="principalInput">Principal (Amount): </label>
+  <input type="number" id="principalInput" [(ngModel)]="principal" placeholder="Enter principal amount">
+
+  <label for="rateInput">Rate of Interest (%): </label>
+  <input type="number" id="rateInput" [(ngModel)]="rate" placeholder="Enter interest rate">
+
+  <label for="timeInput">Time (Years): </label>
+  <input type="number" id="timeInput" [(ngModel)]="time" placeholder="Enter time period in years">
+
+  <button (click)="calculateInterest()">Calculate Interest</button>
+</div>
+
+<div *ngIf="interest !== null">
+  <p>Simple Interest: {{ interest | currency }}</p>
+</div>
+
