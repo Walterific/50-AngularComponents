@@ -1,0 +1,13 @@
+<div>
+  <label for="number1Input">Number 1: </label>
+  <input type="number" id="number1Input" [(ngModel)]="number1" name="number1">
+
+  <label for="number2Input">Number 2: </label>
+  <input type="number" id="number2Input" [(ngModel)]="number2" name="number2">
+
+  <button type="button" (click)="checkMultiple()">Check Multiple</button>
+</div>
+
+<div *ngIf="isMultiple !== null">
+  <p>{{ number1 }} is {{ isMultiple ? '' : 'not ' }}a multiple of {{ number2 }}</p>
+</div>
