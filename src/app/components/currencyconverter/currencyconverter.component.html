@@ -1,0 +1,10 @@
+<div>
+  <label for="dollarAmount">Enter USD amount: </label>
+  <input type="number" id="dollarAmount" [(ngModel)]="dollarAmount" name="dollarAmount" required>
+  <button type="button" (click)="convertToPhp()">Convert to PHP</button>
+</div>
+
+<div *ngIf="phpAmount !== null">
+  <p>Converted Amount: ₱{{ phpAmount }}</p>
+</div>
+
