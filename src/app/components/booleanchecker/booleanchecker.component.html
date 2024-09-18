@@ -1,0 +1,11 @@
+<div>
+  <label for="booleanInput">Enter a boolean value (true/false): </label>
+  <input type="text" id="booleanInput" [(ngModel)]="inputValue" name="booleanInput" required>
+  <button type="button" (click)="checkBoolean()">Check</button>
+</div>
+
+<div *ngIf="result">
+  <p>{{ result }}</p>
+</div>
+
+
