@@ -1,0 +1,23 @@
+<div>
+  <label for="rowsInput">Number of rows: </label>
+  <input type="number" id="rowsInput" [(ngModel)]="rows" placeholder="Enter number of rows">
+</div>
+<br>
+<div>
+  <label for="columnsInput">Number of columns: </label>
+  <input type="number" id="columnsInput" [(ngModel)]="columns" placeholder="Enter number of columns">
+</div>
+<br>
+<div>
+  <button (click)="generateGrid()">Generate Grid</button>
+</div>
+
+<div *ngIf="grid.length > 0">
+  <p>Grid:</p>
+  <table border="1">
+    <tr *ngFor="let row of grid">
+      <td *ngFor="let cell of row">{{ cell }}</td>
+    </tr>
+  </table>
+</div>
+
