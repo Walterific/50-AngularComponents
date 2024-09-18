@@ -1,0 +1,11 @@
+<div>
+  <label for="usernameInput">Enter Username: </label>
+  <input type="text" [(ngModel)]="username" id="usernameInput" placeholder="Enter username">
+
+  <button (click)="validateUsername()">Validate</button>
+</div>
+
+<div *ngIf="message">
+  <p>{{ message }}</p>
+</div>
+
