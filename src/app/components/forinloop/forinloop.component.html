@@ -1,0 +1,13 @@
+<div>
+  <button (click)="extractData()">Extract Data</button>
+</div>
+
+<div *ngIf="properties.length > 0">
+  <p>Object Properties:</p>
+  <ul>
+    <li *ngFor="let property of properties; let i = index">
+      {{ property }}: {{ values[i] }}
+    </li>
+  </ul>
+</div>
+
