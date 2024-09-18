@@ -1,0 +1,13 @@
+<div>
+  <label for="taskInput">Enter a task: </label>
+  <input type="text" id="taskInput" [(ngModel)]="task" name="task" required>
+  <button type="button" (click)="addTask()">Add Task</button>
+</div>
+
+<div *ngIf="todoList.length > 0">
+  <p>To-Do List:</p>
+  <p *ngFor="let task of todoList; let i = index">
+    {{ task }} <button (click)="removeTask(i)">Remove</button>
+  </p>
+</div>
+
