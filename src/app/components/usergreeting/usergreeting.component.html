@@ -1,0 +1,9 @@
+<div>
+  <label for="name">Enter your name: </label>
+  <input type="text" id="name" [(ngModel)]="name" name="name" required>
+  <button type="button" (click)="generateGreeting()">Generate</button>
+</div>
+
+<div *ngIf="greeting">
+  <p [innerHTML]="greeting"></p>
+</div>
