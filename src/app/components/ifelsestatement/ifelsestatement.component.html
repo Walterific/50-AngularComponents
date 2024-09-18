@@ -1,0 +1,13 @@
+<div>
+  <label for="numberInput">Enter a number: </label>
+  <input type="number" id="numberInput" [(ngModel)]="number" placeholder="Enter a number">
+</div>
+<br>
+<div>
+  <button (click)="checkNumber()">Check Number</button>
+</div>
+
+<div *ngIf="message">
+  <p>Result: {{ message }}</p>
+</div>
+
