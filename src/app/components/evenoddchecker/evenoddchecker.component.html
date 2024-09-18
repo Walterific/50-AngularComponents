@@ -1,0 +1,9 @@
+<div>
+  <label for="numberInput">Enter a number: </label>
+  <input type="number" id="numberInput" [(ngModel)]="number" name="number" required>
+  <button type="button" (click)="checkEvenOdd()">Check Even or Odd</button>
+</div>
+
+<div *ngIf="result">
+  <p>{{ result }}</p>
+</div>
