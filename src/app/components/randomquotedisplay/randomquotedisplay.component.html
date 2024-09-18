@@ -1,0 +1,8 @@
+<div>
+  <button (click)="displayRandomQuote()">Show Random Quote</button>
+</div>
+
+<div *ngIf="randomQuote">
+  <p>Random Quote: {{ randomQuote }}</p>
+</div>
+
