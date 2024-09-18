@@ -1,0 +1,11 @@
+<div>
+  <label for="stringInput">Enter a string:</label>
+  <input type="text" id="stringInput" [(ngModel)]="inputString" name="stringInput" required>
+  <button type="button" (click)="manipulateString()">Manipulate</button>
+</div>
+
+<div *ngIf="reversedString || uppercaseString">
+  <p>Reversed String: {{ reversedString }}</p>
+  <p>Uppercase String: {{ uppercaseString }}</p>
+</div>
+
