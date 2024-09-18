@@ -1,0 +1,13 @@
+<div>
+  <label for="dayInput">Enter a number (1-7) for the day of the week: </label>
+  <input type="number" id="dayInput" [(ngModel)]="dayNumber" placeholder="Enter day number">
+</div>
+<br>
+<div>
+  <button (click)="findDay()">Find Day</button>
+</div>
+
+<div *ngIf="dayName">
+  <p>Day: {{ dayName }}</p>
+</div>
+
