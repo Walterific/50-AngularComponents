@@ -1,0 +1,27 @@
+<form (ngSubmit)="submitForm()" xmlns:text-align="http://www.w3.org/1999/xhtml">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="name" name="name" required>
+  </div>
+  <br>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="email" name="email" required>
+  </div>
+  <br>
+  <div>
+    <label for="address">Address:</label>
+    <input type="address" id="address" [(ngModel)]="address" name="address" required>
+  </div>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+<p>================  Form Output  ================</p>
+
+<div *ngIf="submittedData.name && submittedData.email">
+  <p>Submitted Data:</p>
+  <p>Name: {{ submittedData.name }}</p>
+  <p>Email: {{ submittedData.email }}</p>
+  <p>Address: {{submittedData.address}}</p>
+</div>
