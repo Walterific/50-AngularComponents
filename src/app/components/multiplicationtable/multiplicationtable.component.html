@@ -1,0 +1,13 @@
+<div>
+  <label for="numberInput">Enter a number: </label>
+  <input type="number" id="numberInput" [(ngModel)]="number" name="number" required>
+  <button type="button" (click)="generateTable()">Generate Multiplication Table</button>
+</div>
+
+<div *ngIf="table.length > 0">
+  <p>Multiplication Table for {{ number }}:</p>
+  <p *ngFor="let value of table; let i = index">
+      {{ number }} x {{ i + 1 }} = {{ value }}
+  </p>
+</div>
+
