@@ -1,0 +1,12 @@
+<div>
+  <label for="fibInput">Enter a number (N) to generate the first N Fibonacci numbers: </label>
+  <input type="number" id="fibInput" [(ngModel)]="num" placeholder="Enter a number">
+
+  <button (click)="generateFibonacci()">Generate Fibonacci Sequence</button>
+</div>
+
+<div *ngIf="fibonacciSequence.length > 0">
+  <h4>Fibonacci Sequence:</h4>
+  <p>{{ fibonacciSequence.join(', ') }}</p>
+</div>
+
