@@ -1,0 +1,11 @@
+<div>
+  <button (click)="extractElements()">Extract Elements</button>
+</div>
+
+<div *ngIf="elements.length > 0">
+  <p>Array Elements:</p>
+  <p *ngFor="let element of elements">
+    {{ element }}
+  </p>
+</div>
+
