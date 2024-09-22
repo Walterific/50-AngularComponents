@@ -13,3 +13,4 @@ export class TextlengthComponent {
     this.textLength = this.inputText.length;
   }
 }
+

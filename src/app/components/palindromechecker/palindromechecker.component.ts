@@ -14,3 +14,4 @@ export class PalindromecheckerComponent {
     this.isPalindrome = normalizedWord === normalizedWord.split('').reverse().join('');
   }
 }
+

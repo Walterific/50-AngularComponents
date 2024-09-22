@@ -13,3 +13,4 @@ export class WordreverserComponent {
     this.reversedWord = this.inputWord.split('').reverse().join('');
   }
 }
+

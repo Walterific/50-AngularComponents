@@ -30,3 +30,4 @@ export class CalculatorComponent {
     this.result = this.number1 / this.number2;
   }
 }
+

@@ -13,3 +13,4 @@ export class CharactercounterComponent {
     this.characterCount = this.inputString.length;
   }
 }
+

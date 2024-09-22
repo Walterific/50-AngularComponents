@@ -13,3 +13,4 @@ export class ShowdateComponent {
     this.currentDate = now.toLocaleString();
   }
 }
+

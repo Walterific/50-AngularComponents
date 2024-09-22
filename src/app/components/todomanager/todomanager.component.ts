@@ -20,3 +20,4 @@ export class TodomanagerComponent {
     this.todoList.splice(index, 1);
   }
 }
+

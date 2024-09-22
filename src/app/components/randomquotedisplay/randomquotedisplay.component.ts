@@ -21,3 +21,4 @@ export class RandomquotedisplayComponent {
     this.randomQuote = this.quotes[randomIndex];
   }
 }
+

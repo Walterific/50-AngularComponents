@@ -24,3 +24,4 @@ export class WordshufflerComponent {
     return array.join('');
   }
 }
+

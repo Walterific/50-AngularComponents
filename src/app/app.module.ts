@@ -38,9 +38,7 @@ import {WordshufflerComponent} from "./components/wordshuffler/wordshuffler.comp
 import {BmisolverComponent} from "./components/bmisolver/bmisolver.component";
 import {UsernamevalidatorComponent} from "./components/usernamevalidator/usernamevalidator.component";
 import {InterestcalculatorComponent} from "./components/interestcalculator/interestcalculator.component";
-import {
-  CompoundinterestcalculatorComponent
-} from "./components/compoundinterestcalculator/compoundinterestcalculator.component";
+import {CompoundinterestcalculatorComponent} from "./components/compoundinterestcalculator/compoundinterestcalculator.component";
 import {FibonaccigeneratorComponent} from "./components/fibonaccigenerator/fibonaccigenerator.component";
 import {OddsumcalculatorComponent} from "./components/oddsumcalculator/oddsumcalculator.component";
 import {CurrencyformatterComponent} from "./components/currencyformatter/currencyformatter.component";
